@@ -26,14 +26,6 @@ export function Header() {
             <span className="block sm:inline text-lg sm:text-xl lg:text-2xl font-semibold dark:text-white text-black">Inno <span className="linear-wipe">Chat</span></span>
           </a>
         </span>
-        <a
-          target="_blank"
-          href="https://git.new/answr"
-          rel="noopener noreferrer"
-
-        >
-          <GithubLogo size={24} />
-        </a>
       </header>
       {/* <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} /> */}
     </>
