@@ -23,7 +23,7 @@ export function Header() {
         </div>
         <span className="inline-flex items-center home-links whitespace-nowrap">
           <a href="https://developersdigest.tech" rel="noopener" target="_blank">
-            <span className="block sm:inline text-lg sm:text-xl lg:text-2xl font-semibold dark:text-white text-black">answer <span className="linear-wipe">engine</span></span>
+            <span className="block sm:inline text-lg sm:text-xl lg:text-2xl font-semibold dark:text-white text-black">Inno <span className="linear-wipe">Chat</span></span>
           </a>
         </span>
         <a
