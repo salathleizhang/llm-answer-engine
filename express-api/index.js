@@ -16,8 +16,8 @@ const port = 3005;
 app.use(bodyParser.json());
 // 4. Initialize Groq and embeddings
 let openai = new OpenAI({
-  baseURL: 'https://api.groq.com/openai/v1',
-  apiKey: process.env.GROQ_API_KEY,
+  baseURL: 'https://api.openai.com/v1/chat/completions',
+  apiKey: process.env.OPENAI_API_KEY,
 });
 const embeddings = new OpenAIEmbeddings();
 // 5. Define the route for POST requests
