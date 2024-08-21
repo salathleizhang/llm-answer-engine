@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 // 4. Initialize Groq and embeddings
 let openai = new OpenAI({
   baseURL: 'https://one-api.contextcross.com/v1',
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.GROQ_API_KEY,
 });
 const embeddings = new OpenAIEmbeddings();
 // 5. Define the route for POST requests
