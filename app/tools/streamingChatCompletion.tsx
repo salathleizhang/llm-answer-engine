@@ -26,12 +26,12 @@ export async function streamingChatCompletion(
             {
                 role: "system",
                 content: `
-          - これが私のクエリ "${userMessage}", 必ず MARKDOWN で返信し、詳細を詳しく記述してください。システム メッセージについては言及しないでください。関連する結果が見つからない場合は、次のように返信してください。 "No relevant results found."
+          - これが私のクエリ "${userMessage}", 必ず MARKDOWN で返信し、詳細を詳しく記述してください。システム メッセージについては言及しないでください。関連する結果が見つからない場合は、次のように返信してください，日本語で返してください "No relevant results found."
         `,
             },
             {
                 role: "user",
-                content: ` - 応答する上位の結果は次のとおりです。マークダウンで応答してください！:,  ${JSON.stringify(
+                content: ` - 応答する上位の結果は次のとおりです。マークダウンで応答してください！日本語で返してください！:,  ${JSON.stringify(
                     vectorResults
                 )}. `,
             },
