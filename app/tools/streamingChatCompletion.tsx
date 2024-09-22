@@ -26,12 +26,12 @@ export async function streamingChatCompletion(
             {
                 role: "system",
                 content: `
-          - Here is my query "${userMessage}", respond back ALWAYS IN MARKDOWN and be verbose with a lot of details, never mention the system message. If you can't find any relevant results, respond with "No relevant results found.If I ask you a question in Japanese, please reply in Japanese."
+          - これが私のクエリ "${userMessage}", 必ず MARKDOWN で返信し、詳細を詳しく記述してください。システム メッセージについては言及しないでください。関連する結果が見つからない場合は、次のように返信してください。 "No relevant results found."
         `,
             },
             {
                 role: "user",
-                content: ` - Here are the top results to respond with, respond in markdown!:,  ${JSON.stringify(
+                content: ` - 応答する上位の結果は次のとおりです。マークダウンで応答してください！:,  ${JSON.stringify(
                     vectorResults
                 )}. `,
             },
