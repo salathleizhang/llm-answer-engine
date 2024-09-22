@@ -27,21 +27,21 @@ export const relevantQuestions = async (sources: SearchResult[], userMessage: St
             {
                 role: "system",
                 content: `
-            You are a Question generator who generates an array of 3 follow-up questions in JSON format.
-            The JSON schema should include:
+            あなたは、JSON 形式で 3 つのフォローアップ質問の配列を生成する質問ジェネレーターです.
+            JSON スキーマには次の内容を含める必要があります:
             {
-              "original": "The original search query or context",
+              "original": "元の検索クエリまたはコンテキスト",
               "followUp": [
-                "Question 1",
-                "Question 2", 
-                "Question 3"
+                "質問 1",
+                "質問 2", 
+                "質問 3"
               ]
             }
             `,
             },
             {
                 role: "user",
-                content: `Generate follow-up questions based on the top results from a similarity search: ${JSON.stringify(sources)}. The original search query is: "${userMessage}".`,
+                content: `類似検索の上位結果に基づいてフォローアップの質問を生成する: ${JSON.stringify(sources)}. 元の検索クエリは: "${userMessage}".`,
             },
         ],
         model: config.inferenceModel,
